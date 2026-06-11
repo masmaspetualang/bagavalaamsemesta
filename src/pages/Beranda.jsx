@@ -18,7 +18,7 @@ import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection'
 import { FEATURED_PRODUCTS, CLIENTS } from '../constants/products';
 import historyImg from '../assets/konten/history.jpg';
 import factoryImg from '../assets/konten/we_are_factory.jpg';
-import facilityVideo from '../assets/vidio/j7.mp4';
+import facilityVideo from '../assets/vidio/J7.mp4';
 import styles from './Beranda.module.css';
 
 const CATEGORY_ICONS = [
