@@ -1,122 +1,132 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Suspense, lazy, useEffect } from 'react';
+import { Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ui/ScrollToTop';
 
-function App() {
-  const [count, setCount] = useState(0)
+// Lazy load pages
+const Beranda = lazy(() => import('./pages/Beranda'));
+const TentangKami = lazy(() => import('./pages/TentangKami'));
+const Produk = lazy(() => import('./pages/Produk'));
+const Keunggulan = lazy(() => import('./pages/Keunggulan'));
+const Kontak = lazy(() => import('./pages/Kontak'));
+
+// ─── Scroll ke atas setiap pindah halaman ───
+function ScrollToTopOnRoute() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+  return null;
+}
+
+function NotFound() {
+  const { i18n } = useTranslation();
+  return (
+    <div style={{
+      minHeight: '60vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '1rem',
+      textAlign: 'center',
+      padding: '2rem',
+      paddingTop: '120px',
+    }}>
+      <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '4rem', color: 'var(--color-primary)' }}>404</h1>
+      <p style={{ fontSize: '1.1rem', color: 'var(--color-text-muted)' }}>
+        {i18n.language === 'id' ? 'Halaman tidak ditemukan.' : 'Page not found.'}
+      </p>
+      <a href={`/${i18n.language}`} className="btn btn-primary">
+        {i18n.language === 'id' ? 'Kembali ke Beranda' : 'Back to Home'}
+      </a>
+    </div>
+  );
+}
+
+// Layout wrapper: syncs i18n language dari URL param
+function LocaleLayout() {
+  const { lang } = useParams();
+  const { i18n } = useTranslation();
+
+  // Safety sync: jika user akses URL langsung (mis. /en/ tanpa melalui Navbar)
+  // Navbar sudah set bahasa secara sinkron sebelum navigate, jadi ini hanya backup
+  useEffect(() => {
+    if (['id', 'en'].includes(lang) && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (!['id', 'en'].includes(lang)) {
+    return <Navigate to="/id" replace />;
+  }
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      {/* Global SEO base */}
+      <Helmet>
+        <html lang={lang} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Bagava Alam Semesta" />
+        <meta name="theme-color" content="#2563EB" />
+      </Helmet>
 
-      <div className="ticks"></div>
+      {/* Scroll ke paling atas saat pindah halaman */}
+      <ScrollToTopOnRoute />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <Navbar />
+      <main id="main-content">
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route index element={<Beranda />} />
+            <Route path="tentang-kami" element={<TentangKami />} />
+            <Route path="produk" element={<Produk />} />
+            <Route path="keunggulan" element={<Keunggulan />} />
+            <Route path="kontak" element={<Kontak />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
+      <ScrollToTop />
     </>
-  )
+  );
 }
 
-export default App
+function PageLoader() {
+  return (
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
+      <div style={{
+        width: '48px',
+        height: '48px',
+        border: '3px solid var(--color-primary-light)',
+        borderTopColor: 'var(--color-primary)',
+        borderRadius: '50%',
+        animation: 'spin 0.8s linear infinite',
+      }} />
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <HelmetProvider>
+      <Routes>
+        {/* Redirect root ke /id */}
+        <Route path="/" element={<Navigate to="/id" replace />} />
+        {/* Locale routes */}
+        <Route path="/:lang/*" element={<LocaleLayout />} />
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate to="/id" replace />} />
+      </Routes>
+    </HelmetProvider>
+  );
+}

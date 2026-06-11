@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "beranda": "Beranda",
+    "tentangKami": "Tentang Kami",
+    "produk": "Produk",
+    "keunggulan": "Keunggulan",
+    "kontak": "Kontak"
+  },
+  "hero": {
+    "badge": "Berstandar BPOM",
+    "title": "Manufaktur Produk Kecantikan & Kesehatan",
+    "subtitle": "Bagava Alam Semesta melayani jasa manufaktur produk kecantikan & kesehatan berbahan natural, dari formulasi hingga legalitas BPOM.",
+    "btnProduk": "Lihat Produk",
+    "btnKontak": "Hubungi Kami"
+  },
+  "marquee": {
+    "items": [
+      "Bersertifikat BPOM",
+      "Bahan Natural Berkualitas",
+      "Pengalaman Sejak 2020",
+      "Formulasi hingga Legalitas",
+      "Dipercaya 150K+ Pelanggan"
+    ]
+  },
+  "kategori": {
+    "title": "Kategori Produk Kami",
+    "items": [
+      { "label": "Hand Sanitizer" },
+      { "label": "Disinfectant" },
+      { "label": "Antiseptic" },
+      { "label": "Skincare" },
+      { "label": "Personal Care" },
+      { "label": "Healthcare" }
+    ]
+  },
+  "aboutPreview": {
+    "badge": "Tentang Kami",
+    "title": "Mitra Manufaktur Terpercaya Anda",
+    "desc": "Selamat datang di Bagava Alam Semesta, tempat di mana alam bertemu dengan inovasi. Didirikan dengan misi menyediakan solusi manufaktur berkualitas tinggi, kami menggunakan bahan-bahan natural terbaik yang ramah lingkungan dan telah tersertifikasi BPOM.",
+    "stat1Label": "Pelanggan Puas",
+    "stat2Label": "Produk Unik",
+    "stat3Label": "Bahan Natural",
+    "btnSelengkapnya": "Selengkapnya"
+  },
+  "produkUnggulan": {
+    "badge": "Produk Kami",
+    "title": "Produk Unggulan",
+    "subtitle": "Formulasi terbaik dengan bahan-bahan natural pilihan yang telah tersertifikasi BPOM",
+    "btnLihatSemua": "Lihat Semua Produk"
+  },
+  "klien": {
+    "badge": "Mitra Kami",
+    "title": "Dipercaya oleh Ratusan Perusahaan",
+    "subtitle": "Bergabunglah bersama mitra-mitra terkemuka yang telah mempercayai kualitas produk kami"
+  },
+  "ctaBanner": {
+    "title": "Siap Memulai Bisnis Produk Anda?",
+    "subtitle": "Hubungi kami sekarang untuk konsultasi gratis dan penawaran terbaik untuk kebutuhan manufaktur Anda.",
+    "btnKontak": "Hubungi Kami",
+    "btnWa": "Chat WhatsApp"
+  },
+  "about": {
+    "pageTitle": "Tentang Kami | Bagava Alam Semesta",
+    "pageDesc": "Kenali lebih dalam tentang Bagava Alam Semesta, manufaktur produk kecantikan dan kesehatan berstandar BPOM dengan bahan-bahan natural berkualitas.",
+    "heroBadge": "Sejak 2020",
+    "heroTitle": "Menghadirkan Produk Natural Berkualitas untuk Kehidupan Lebih Baik",
+    "heroSubtitle": "Kami berkomitmen untuk menjadi mitra manufaktur terpercaya dalam industri kecantikan dan kesehatan Indonesia.",
+    "historyBadge": "Sejarah Kami",
+    "historyTitle": "Perjalanan Bagava Alam Semesta",
+    "historyDesc": "Bagava Alam Semesta didirikan pada tahun 2020 dengan visi menghadirkan produk kecantikan dan kesehatan berbahan natural berkualitas tinggi yang terjangkau. Berawal dari laboratorium kecil dengan semangat besar, kini kami telah berkembang menjadi salah satu manufaktur terpercaya di Indonesia dengan lebih dari 150.000 pelanggan setia.",
+    "historyDesc2": "Dengan dukungan teknologi modern dan tim ahli yang berpengalaman, kami memastikan setiap produk melewati standar kualitas ketat sebelum sampai ke tangan konsumen. Setiap tetes produk kami mengandung komitmen untuk memberikan yang terbaik.",
+    "misiTitle": "Visi & Misi Kami",
+    "misiSubtitle": "Lima pilar utama yang menjadi landasan setiap langkah kami dalam melayani pelanggan",
+    "misiItems": [
+      {
+        "title": "Menciptakan Produk Berkualitas",
+        "desc": "Menghadirkan produk kecantikan dan kesehatan dengan formulasi terbaik menggunakan bahan natural pilihan."
+      },
+      {
+        "title": "Distribusi Merata ke Seluruh Indonesia",
+        "desc": "Memastikan produk berkualitas dapat diakses oleh seluruh lapisan masyarakat di Indonesia."
+      },
+      {
+        "title": "Mengembangkan Produk Terbaru",
+        "desc": "Terus berinovasi dan mengembangkan produk-produk baru yang relevan dengan kebutuhan pasar."
+      },
+      {
+        "title": "Manajemen Efektif & Efisien",
+        "desc": "Menerapkan sistem manajemen yang terstruktur untuk menghasilkan produk terbaik dengan efisiensi optimal."
+      },
+      {
+        "title": "Meningkatkan Kesadaran Kesehatan",
+        "desc": "Berkontribusi dalam meningkatkan kesadaran masyarakat tentang pentingnya produk kesehatan dan kecantikan berbahan natural."
+      }
+    ],
+    "nilaiTitle": "Nilai-Nilai Perusahaan",
+    "nilaiItems": [
+      { "title": "Integritas", "desc": "Kami menjunjung tinggi kejujuran dan transparansi dalam setiap aspek bisnis kami." },
+      { "title": "Inovasi", "desc": "Selalu mencari cara baru untuk meningkatkan produk dan layanan kami." },
+      { "title": "Kualitas", "desc": "Tidak berkompromi dalam hal kualitas produk yang kami hasilkan." },
+      { "title": "Keberlanjutan", "desc": "Berkomitmen untuk menjaga lingkungan melalui penggunaan bahan-bahan yang berkelanjutan." }
+    ]
+  },
+  "produk": {
+    "pageTitle": "Produk | Bagava Alam Semesta",
+    "pageDesc": "Temukan rangkaian produk kecantikan dan kesehatan berstandar BPOM dari Bagava Alam Semesta, dibuat dari bahan-bahan natural pilihan.",
+    "badge": "Produk Kami",
+    "title": "Rangkaian Produk Berkualitas",
+    "subtitle": "Setiap produk dirancang dengan formulasi terbaik menggunakan bahan natural yang telah tersertifikasi BPOM"
+  },
+  "keunggulan": {
+    "pageTitle": "Keunggulan | Bagava Alam Semesta",
+    "pageDesc": "Ketahui keunggulan Bagava Alam Semesta sebagai manufaktur produk kecantikan dan kesehatan berstandar BPOM terpercaya di Indonesia.",
+    "heroBadge": "Mengapa Memilih Kami",
+    "heroTitle": "Keunggulan yang Membuat Kami Berbeda",
+    "heroSubtitle": "Kami tidak hanya membuat produk, kami membangun kepercayaan melalui standar kualitas tertinggi.",
+    "mainTitle": "Tiga Pilar Keunggulan Kami",
+    "mainSubtitle": "Keunggulan yang telah teruji dan dipercaya oleh ratusan mitra bisnis kami",
+    "items": [
+      {
+        "badge": "Kualitas Terjamin",
+        "title": "Produk Berstandar Kualitas Tinggi",
+        "desc": "Setiap produk kami melewati serangkaian uji kualitas ketat menggunakan standar internasional. Dari pemilihan bahan baku hingga proses pengemasan, kami memastikan konsistensi kualitas di setiap tahapan produksi.",
+        "features": ["Bersertifikat BPOM", "Uji Laboratorium Terakreditasi", "ISO Quality Standard", "Zero Defect Policy"]
+      },
+      {
+        "badge": "Pabrik Sendiri",
+        "title": "Kami Adalah Pabrik, Bukan Perantara",
+        "desc": "Dengan fasilitas produksi sendiri yang modern, kami memiliki kendali penuh atas setiap aspek manufaktur. Hal ini memungkinkan kami memberikan harga terbaik tanpa kompromi pada kualitas.",
+        "features": ["Fasilitas Produksi Modern", "Kapasitas Produksi Besar", "Kontrol Kualitas Internal", "Harga Langsung dari Pabrik"]
+      },
+      {
+        "badge": "Teknologi Terkini",
+        "title": "Dukungan Teknologi & Riset Terdepan",
+        "desc": "Tim R&D kami terus berinovasi dengan memanfaatkan teknologi terbaru dalam pengembangan formulasi produk. Laboratorium canggih kami memastikan setiap produk memenuhi standar kualitas tertinggi.",
+        "features": ["Laboratorium R&D Canggih", "Tim Ahli Berpengalaman", "Formulasi Inovatif", "Riset Berkelanjutan"]
+      }
+    ],
+    "sertifTitle": "Sertifikasi & Penghargaan",
+    "sertifSubtitle": "Diakui oleh lembaga-lembaga terpercaya nasional dan internasional",
+    "sertifItems": [
+      { "title": "BPOM RI", "desc": "Produk kami telah mendapatkan izin edar resmi dari Badan Pengawas Obat dan Makanan Republik Indonesia." },
+      { "title": "Halal MUI", "desc": "Tersertifikasi halal oleh Majelis Ulama Indonesia untuk memastikan keamanan bagi konsumen Muslim." },
+      { "title": "ISO 22716", "desc": "Memenuhi standar internasional Good Manufacturing Practices (GMP) untuk industri kosmetik." },
+      { "title": "SNI", "desc": "Produk kami telah memenuhi Standar Nasional Indonesia untuk kualitas dan keamanan produk." }
+    ],
+    "prosesTitle": "Proses Manufaktur Kami",
+    "prosesItems": [
+      { "step": "01", "title": "Konsultasi", "desc": "Diskusi kebutuhan dan konsep produk Anda bersama tim ahli kami" },
+      { "step": "02", "title": "Formulasi", "desc": "Pengembangan formula unik menggunakan bahan-bahan natural pilihan" },
+      { "step": "03", "title": "Uji Klinis", "desc": "Pengujian keamanan dan efektivitas produk di laboratorium terakreditasi" },
+      { "step": "04", "title": "Registrasi BPOM", "desc": "Pengurusan izin edar dan sertifikasi resmi dari BPOM RI" },
+      { "step": "05", "title": "Produksi", "desc": "Proses produksi massal dengan standar GMP yang ketat" },
+      { "step": "06", "title": "Pengiriman", "desc": "Distribusi produk ke seluruh Indonesia dengan aman dan tepat waktu" }
+    ]
+  },
+  "kontak": {
+    "pageTitle": "Kontak | Bagava Alam Semesta",
+    "pageDesc": "Hubungi Bagava Alam Semesta untuk konsultasi manufaktur produk kecantikan dan kesehatan. Kami siap membantu mewujudkan produk impian Anda.",
+    "badge": "Hubungi Kami",
+    "title": "Kami Siap Membantu Anda",
+    "subtitle": "Konsultasikan kebutuhan manufaktur produk Anda bersama tim ahli kami. Gratis, tanpa komitmen.",
+    "infoTitle": "Informasi Kontak",
+    "alamat": "Jl. Raya Industri No. 123, Kawasan Industri Jababeka, Bekasi, Jawa Barat 17530",
+    "telepon": "+62 21 8900 1234",
+    "email": "info@bagavaalamsemesta.id",
+    "waNumber": "+62 812 3456 7890",
+    "formTitle": "Kirim Pesan",
+    "formName": "Nama Lengkap",
+    "formEmail": "Alamat Email",
+    "formPhone": "Nomor WhatsApp",
+    "formSubject": "Subjek",
+    "formMessage": "Pesan Anda",
+    "formBtn": "Kirim Pesan",
+    "formSuccess": "Pesan berhasil dikirim! Kami akan menghubungi Anda segera.",
+    "jamKerjaTitle": "Jam Operasional",
+    "jamKerja": "Senin – Jumat: 08.00 – 17.00 WIB",
+    "jamSabtu": "Sabtu: 08.00 – 13.00 WIB"
+  },
+  "footer": {
+    "desc": "Manufaktur produk kecantikan & kesehatan berstandar BPOM dengan bahan-bahan natural berkualitas tinggi.",
+    "linkTitle": "Tautan Cepat",
+    "produkTitle": "Produk Kami",
+    "kontakTitle": "Kontak",
+    "copyright": "© 2024 Bagava Alam Semesta. Hak cipta dilindungi."
+  }
+}
