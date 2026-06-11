@@ -45,25 +45,16 @@
 }
 
 .produkGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: var(--space-6);
-}
-
-@media (max-width: 1200px) {
-  .produkGrid { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 900px) {
-  .produkGrid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 480px) {
-  .produkGrid { grid-template-columns: 1fr; }
 }
 
 /* ─── PRODUCT CARD ─── */
 .produkCard {
+  width: 100%;
+  max-width: 280px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   background: var(--color-white);
@@ -180,12 +171,11 @@
 @media (max-width: 768px) {
   .pageHero { padding: 120px 0 60px; }
   .pageHeroInner h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
-  .produkGrid { grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  .produkGrid { gap: var(--space-4); }
 }
 
 @media (max-width: 480px) {
   .pageHero { padding: 100px 0 48px; }
-  .produkGrid { grid-template-columns: 1fr; }
   .produkFooter { flex-direction: column; align-items: flex-start; }
   .inquiryBtn { width: 100%; text-align: center; }
 }

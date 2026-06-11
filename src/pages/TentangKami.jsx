@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { FiCheckCircle, FiShield, FiZap, FiAward, FiDroplet } from 'react-icons/fi';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
-import historyImg from '../assets/konten/history.jpg';
+import historyImg from '../assets/foto/IMG_8997.JPG';
 import createQuality from '../assets/konten/create_quality_product.jpg';
 import distributeAll from '../assets/konten/distribute_to_all.jpg';
 import developNewest from '../assets/konten/develop_newest_product.jpg';
@@ -26,7 +26,7 @@ export default function TentangKami() {
       <Helmet>
         <title>{t('about.pageTitle')}</title>
         <meta name="description" content={t('about.pageDesc')} />
-        <link rel="canonical" href={`https://bagavaalamsemesta.id/${lang}/tentang-kami`} />
+        <link rel="canonical" href={`https://bagavaalamsemesta.com/${lang}/tentang-kami`} />
         <meta property="og:title" content={t('about.pageTitle')} />
         <meta property="og:description" content={t('about.pageDesc')} />
         <meta property="og:type" content="website" />
@@ -64,7 +64,7 @@ export default function TentangKami() {
               <p>{t('about.historyDesc2')}</p>
               <div className={styles.historyStats}>
                 {[
-                  { num: '2020', label: lang === 'id' ? 'Tahun Berdiri' : 'Est. Year' },
+                  { num: '2019', label: lang === 'id' ? 'Tahun Berdiri' : 'Est. Year' },
                   { num: '150K+', label: lang === 'id' ? 'Pelanggan' : 'Customers' },
                   { num: '50+', label: lang === 'id' ? 'Produk' : 'Products' },
                 ].map((stat) => (
@@ -85,6 +85,14 @@ export default function TentangKami() {
           <AnimatedSection className="section-header">
             <h2>{t('about.misiTitle')}</h2>
             <p>{t('about.misiSubtitle')}</p>
+          </AnimatedSection>
+
+          {/* Visi Block */}
+          <AnimatedSection className={styles.visiBlock} variant="fadeInUp">
+            <span className={styles.visiBadge}>{t('about.visiBadge')}</span>
+            <p className={styles.visiText}>
+              &ldquo;{t('about.visiText')}&rdquo;
+            </p>
           </AnimatedSection>
 
           <div className={styles.misiList}>

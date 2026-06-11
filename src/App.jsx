@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ui/ScrollToTop';
+import FloatingWhatsapp from './components/ui/FloatingWhatsapp';
 
 // Lazy load pages
 const Beranda = lazy(() => import('./pages/Beranda'));
@@ -92,6 +93,7 @@ function LocaleLayout() {
       </main>
       <Footer />
       <ScrollToTop />
+      <FloatingWhatsapp />
     </>
   );
 }

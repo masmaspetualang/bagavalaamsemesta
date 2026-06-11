@@ -9,11 +9,16 @@ import {
   FiPackage,
   FiActivity,
   FiStar,
+  FiCheck,
+  FiAward,
+  FiCheckCircle,
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
 import { FEATURED_PRODUCTS, CLIENTS } from '../constants/products';
 import historyImg from '../assets/konten/history.jpg';
+import factoryImg from '../assets/konten/we_are_factory.jpg';
+import facilityVideo from '../assets/vidio/j7.mp4';
 import styles from './Beranda.module.css';
 
 const CATEGORY_ICONS = [
@@ -31,22 +36,22 @@ export default function Beranda() {
   const kategoriItems = t('kategori.items', { returnObjects: true });
   const marqueeItems = t('marquee.items', { returnObjects: true });
 
-  const baseUrl = 'https://bagavaalamsemesta.id';
+  const baseUrl = 'https://bagavaalamsemesta.com';
 
   return (
     <>
       <Helmet>
-        <title>Manufaktur Produk Kecantikan &amp; Kesehatan Berstandar BPOM | Bagava Alam Semesta</title>
+        <title>Manufaktur Produk Kesehatan &amp; Kosmetik Berstandar BPOM | Bagava Alam Semesta</title>
         <meta
           name="description"
-          content="Bagava Alam Semesta melayani jasa manufaktur produk kecantikan & kesehatan berbahan natural dari formulasi hingga legalitas BPOM. Dipercaya 150K+ pelanggan sejak 2020."
+          content="Bagava Alam Semesta melayani jasa manufaktur produk kesehatan & kosmetik berbahan natural dari formulasi hingga legalitas BPOM. Dipercaya 150K+ pelanggan sejak 2019."
         />
         <link rel="canonical" href={`${baseUrl}/${lang}/`} />
         <link rel="alternate" hrefLang="id" href={`${baseUrl}/id/`} />
         <link rel="alternate" hrefLang="en" href={`${baseUrl}/en/`} />
         <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/id/`} />
-        <meta property="og:title" content="Manufaktur Produk Kecantikan & Kesehatan Berstandar BPOM | Bagava Alam Semesta" />
-        <meta property="og:description" content="Bagava melayani jasa manufaktur produk kecantikan & kesehatan berbahan natural dari formulasi hingga legalitas BPOM." />
+        <meta property="og:title" content="Manufaktur Produk Kesehatan & Kosmetik Berstandar BPOM | Bagava Alam Semesta" />
+        <meta property="og:description" content="Bagava melayani jasa manufaktur produk kesehatan & kosmetik berbahan natural dari formulasi hingga legalitas BPOM." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${baseUrl}/${lang}/`} />
         <meta property="og:locale" content={lang === 'id' ? 'id_ID' : 'en_US'} />
@@ -55,11 +60,11 @@ export default function Beranda() {
           "@type": "Organization",
           "name": "Bagava Alam Semesta",
           "url": baseUrl,
-          "description": "Manufaktur produk kecantikan & kesehatan berstandar BPOM",
+          "description": "Manufaktur produk kesehatan & kosmetik berstandar BPOM",
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "ID",
-            "addressLocality": "Bekasi"
+            "addressLocality": "Tangerang"
           }
         })}</script>
       </Helmet>
@@ -83,7 +88,7 @@ export default function Beranda() {
                 <Link to={`/${lang}/produk`} className="btn btn-primary">
                   {t('hero.btnProduk')} <FiArrowRight />
                 </Link>
-                <Link to={`/${lang}/kontak`} className="btn btn-outline">
+                <Link to={`/${lang}/kontak`} className="btn btn-ghost">
                   {t('hero.btnKontak')}
                 </Link>
               </div>
@@ -100,14 +105,6 @@ export default function Beranda() {
                 loading="eager"
                 fetchPriority="high"
               />
-              <div className={styles.heroBadgeCard}>
-                <FiShield size={18} />
-                <span>BPOM Certified</span>
-              </div>
-              <div className={styles.heroStatCard}>
-                <strong>150K+</strong>
-                <span>Happy Customers</span>
-              </div>
             </div>
           </AnimatedSection>
         </div>
@@ -130,7 +127,7 @@ export default function Beranda() {
       </div>
 
       {/* ─── CATEGORIES ─── */}
-      <section className={`section ${styles.kategoriSection}`} aria-label="Product categories">
+      {/* <section className={`section ${styles.kategoriSection}`} aria-label="Product categories">
         <div className="container">
           <AnimatedSection className="section-header">
             <span className="badge">{t('kategori.title')}</span>
@@ -150,7 +147,7 @@ export default function Beranda() {
             })}
           </AnimatedSection>
         </div>
-      </section>
+      </section> */}
 
       {/* ─── ABOUT PREVIEW ─── */}
       <section className={`section ${styles.aboutSection}`} aria-label="About Bagava">
@@ -158,7 +155,7 @@ export default function Beranda() {
           <div className={styles.aboutGrid}>
             <AnimatedSection variant="slideLeft" className={styles.aboutImg}>
               <img
-                src={historyImg}
+                src={factoryImg}
                 alt="Bagava Alam Semesta Factory"
                 loading="lazy"
                 width={540}
@@ -166,7 +163,7 @@ export default function Beranda() {
               />
               <div className={styles.aboutImgOverlay}>
                 <div className={styles.aboutStat}>
-                  <strong>2020</strong>
+                  <strong>2019</strong>
                   <span>Est.</span>
                 </div>
               </div>
@@ -177,24 +174,98 @@ export default function Beranda() {
               <h2>{t('aboutPreview.title')}</h2>
               <p>{t('aboutPreview.desc')}</p>
 
-              <div className={styles.stats}>
-                <div className={styles.statItem}>
-                  <strong>150K+</strong>
-                  <span>{t('aboutPreview.stat1Label')}</span>
+              <div className={styles.aboutFeatures}>
+                <div className={styles.featureCard}>
+                  <div className={styles.featureIcon}>
+                    <FiShield size={20} />
+                  </div>
+                  <div className={styles.featureText}>
+                    <h4>{lang === 'id' ? 'Sertifikasi Resmi' : 'Official Certifications'}</h4>
+                    <p>{lang === 'id' ? 'Formulasi berstandar BPOM RI & Halal MUI.' : 'BPOM RI & Halal certified formulations.'}</p>
+                  </div>
                 </div>
-                <div className={styles.statItem}>
-                  <strong>50+</strong>
-                  <span>{t('aboutPreview.stat2Label')}</span>
+                <div className={styles.featureCard}>
+                  <div className={styles.featureIcon}>
+                    <FiAward size={20} />
+                  </div>
+                  <div className={styles.featureText}>
+                    <h4>{lang === 'id' ? 'Bahan Alami Pilihan' : 'Premium Natural Ingredients'}</h4>
+                    <p>{lang === 'id' ? 'Ekstrak natural terbaik ramah lingkungan.' : 'Eco-friendly, premium natural extracts.'}</p>
+                  </div>
                 </div>
-                <div className={styles.statItem}>
-                  <strong>95%</strong>
-                  <span>{t('aboutPreview.stat3Label')}</span>
+                <div className={styles.featureCard}>
+                  <div className={styles.featureIcon}>
+                    <FiCheckCircle size={20} />
+                  </div>
+                  <div className={styles.featureText}>
+                    <h4>{lang === 'id' ? 'Standar Higienis GMP' : 'GMP Sanitation Standards'}</h4>
+                    <p>{lang === 'id' ? 'Proses produksi modern steril dan higienis.' : 'Modern sterile and hygienic production.'}</p>
+                  </div>
                 </div>
               </div>
 
               <Link to={`/${lang}/tentang-kami`} className="btn btn-primary">
                 {t('aboutPreview.btnSelengkapnya')} <FiArrowRight />
               </Link>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── VIDEO FACILITY ─── */}
+      <section className={`section ${styles.videoSection}`} aria-label="Production facility video">
+        <div className={`container ${styles.videoGridContainer}`}>
+          <div className={styles.videoGrid}>
+            <AnimatedSection variant="slideLeft" className={styles.videoInfo}>
+              <span className="badge">{lang === 'id' ? 'Fasilitas Kami' : 'Our Facility'}</span>
+              <h2>{lang === 'id' ? 'Proses Produksi Higienis & Modern' : 'Hygienic & Modern Production Process'}</h2>
+              <p className={styles.videoDesc}>
+                {lang === 'id'
+                  ? 'Kami berkomitmen menjaga kualitas setiap produk melalui fasilitas produksi modern yang steril, higienis, dan berstandar internasional.'
+                  : 'We are committed to maintaining the quality of every product through sterile, hygienic, and modern production facilities that meet international standards.'}
+              </p>
+              
+              <div className={styles.videoHighlights}>
+                <div className={styles.videoHighlightItem}>
+                  <div className={styles.highlightNumber}>01</div>
+                  <div className={styles.highlightText}>
+                    <h4>{lang === 'id' ? 'Peralatan Steril & Otomatis' : 'Sterile & Automated Equipment'}</h4>
+                    <p>{lang === 'id' ? 'Menggunakan mesin modern untuk menjaga keamanan & kebersihan produk.' : 'Utilizing modern machinery to ensure product safety & cleanliness.'}</p>
+                  </div>
+                </div>
+                <div className={styles.videoHighlightItem}>
+                  <div className={styles.highlightNumber}>02</div>
+                  <div className={styles.highlightText}>
+                    <h4>{lang === 'id' ? 'Kapasitas Produksi Skala Besar' : 'Large-Scale Production Capacity'}</h4>
+                    <p>{lang === 'id' ? 'Siap memproses ribuan unit produk kesehatan & kosmetik setiap hari.' : 'Ready to process thousands of health & cosmetic units daily.'}</p>
+                  </div>
+                </div>
+                <div className={styles.videoHighlightItem}>
+                  <div className={styles.highlightNumber}>03</div>
+                  <div className={styles.highlightText}>
+                    <h4>{lang === 'id' ? 'Pengawasan Ketat Tim Ahli' : 'Strict Expert Supervision'}</h4>
+                    <p>{lang === 'id' ? 'Setiap tahap didampingi oleh staf quality control profesional.' : 'Each stage is supervised by professional quality control staff.'}</p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection variant="slideRight" className={styles.videoWrapper}>
+              <div className={styles.videoCard}>
+                <video
+                  className={styles.videoPlayer}
+                  src={facilityVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                />
+                <div className={styles.videoBadgeOverlay}>
+                  <span className={styles.livePulse} />
+                  <span>{lang === 'id' ? 'Tur Fasilitas' : 'Facility Tour'}</span>
+                </div>
+              </div>
             </AnimatedSection>
           </div>
         </div>
@@ -270,7 +341,7 @@ export default function Beranda() {
                 {t('ctaBanner.btnKontak')} <FiArrowRight />
               </Link>
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6281111823657"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-ghost"

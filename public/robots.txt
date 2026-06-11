@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bagavaalamsemesta.id/sitemap.xml
+Sitemap: https://bagavaalamsemesta.com/sitemap.xml
 
 # Block unnecessary paths
 Disallow: /_next/

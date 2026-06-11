@@ -121,6 +121,44 @@
   background: var(--color-bg);
 }
 
+.visiBlock {
+  max-width: 800px;
+  margin: 0 auto var(--space-16);
+  text-align: center;
+  background: radial-gradient(circle at top left, var(--color-white), var(--color-primary-soft));
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-10);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.visiBadge {
+  display: inline-flex;
+  padding: var(--space-1) var(--space-4);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--color-primary-light);
+}
+
+.visiText {
+  font-family: var(--font-body);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 500;
+  color: var(--color-primary-deeper);
+  line-height: 1.68;
+  position: relative;
+  display: inline-block;
+  max-width: 680px;
+}
+
 .misiList {
   display: flex;
   flex-direction: column;

@@ -8,8 +8,8 @@
   },
   "hero": {
     "badge": "BPOM Certified",
-    "title": "Beauty & Health Product Manufacturer",
-    "subtitle": "Bagava Alam Semesta provides beauty & health product manufacturing services using natural ingredients, from formulation to BPOM legality.",
+    "title": "Health & Cosmetics Product Manufacturer",
+    "subtitle": "Bagava Alam Semesta provides health & cosmetics product manufacturing services using natural ingredients, from formulation to BPOM legality.",
     "btnProduk": "View Products",
     "btnKontak": "Contact Us"
   },
@@ -17,7 +17,7 @@
     "items": [
       "BPOM Certified",
       "Quality Natural Ingredients",
-      "Established Since 2020",
+      "Established Since 2019",
       "Formulation to Legality",
       "Trusted by 150K+ Customers"
     ]
@@ -61,20 +61,22 @@
   },
   "about": {
     "pageTitle": "About Us | Bagava Alam Semesta",
-    "pageDesc": "Learn more about Bagava Alam Semesta, a BPOM-certified beauty and health product manufacturer using quality natural ingredients.",
-    "heroBadge": "Since 2020",
+    "pageDesc": "Learn more about Bagava Alam Semesta, a BPOM-certified health and cosmetics product manufacturer using quality natural ingredients.",
+    "heroBadge": "Since 2019",
     "heroTitle": "Delivering Quality Natural Products for a Better Life",
-    "heroSubtitle": "We are committed to being a trusted manufacturing partner in Indonesia's beauty and health industry.",
+    "heroSubtitle": "We are committed to being a trusted manufacturing partner in Indonesia's health and cosmetics industry.",
     "historyBadge": "Our History",
     "historyTitle": "The Journey of Bagava Alam Semesta",
-    "historyDesc": "Bagava Alam Semesta was founded in 2020 with a vision to provide affordable, high-quality natural beauty and health products. Starting from a small laboratory with great ambition, we have now grown into one of Indonesia's most trusted manufacturers with over 150,000 loyal customers.",
+    "historyDesc": "Bagava Alam Semesta was founded in 2019 with a vision to provide affordable, high-quality natural health and cosmetic products. Starting from a small laboratory with great ambition, we have now grown into one of Indonesia's most trusted manufacturers with over 150,000 loyal customers.",
     "historyDesc2": "With modern technology and an experienced team of experts, we ensure every product goes through strict quality standards before reaching consumers. Every drop of our product contains a commitment to deliver the best.",
+    "visiBadge": "Our Vision",
+    "visiText": "To be a leading company capable of reaching international markets by providing quality, safe, halal products and the best services.",
     "misiTitle": "Our Vision & Mission",
     "misiSubtitle": "Five main pillars that form the foundation of every step we take in serving our customers",
     "misiItems": [
       {
         "title": "Creating Quality Products",
-        "desc": "Delivering beauty and health products with the best formulations using selected natural ingredients."
+        "desc": "Delivering health and cosmetic products with the best formulations using selected natural ingredients."
       },
       {
         "title": "Distribution Across Indonesia",
@@ -90,7 +92,7 @@
       },
       {
         "title": "Increasing Health Awareness",
-        "desc": "Contributing to raising public awareness about the importance of natural health and beauty products."
+        "desc": "Contributing to raising public awareness about the importance of natural health and cosmetic products."
       }
     ],
     "nilaiTitle": "Our Company Values",
@@ -103,14 +105,14 @@
   },
   "produk": {
     "pageTitle": "Products | Bagava Alam Semesta",
-    "pageDesc": "Discover the range of BPOM-certified beauty and health products from Bagava Alam Semesta, made from selected natural ingredients.",
+    "pageDesc": "Discover the range of BPOM-certified health and cosmetics products from Bagava Alam Semesta, made from selected natural ingredients.",
     "badge": "Our Products",
     "title": "Quality Product Range",
     "subtitle": "Each product is designed with the best formulation using BPOM-certified natural ingredients"
   },
   "keunggulan": {
     "pageTitle": "Advantages | Bagava Alam Semesta",
-    "pageDesc": "Learn about the advantages of Bagava Alam Semesta as a trusted BPOM-certified beauty and health product manufacturer in Indonesia.",
+    "pageDesc": "Learn about the advantages of Bagava Alam Semesta as a trusted BPOM-certified health and cosmetics product manufacturer in Indonesia.",
     "heroBadge": "Why Choose Us",
     "heroTitle": "The Advantages That Set Us Apart",
     "heroSubtitle": "We don't just make products, we build trust through the highest quality standards.",
@@ -156,15 +158,15 @@
   },
   "kontak": {
     "pageTitle": "Contact | Bagava Alam Semesta",
-    "pageDesc": "Contact Bagava Alam Semesta for beauty and health product manufacturing consultation. We're ready to help make your dream product a reality.",
+    "pageDesc": "Contact Bagava Alam Semesta for health and cosmetics product manufacturing consultation. We're ready to help make your dream product a reality.",
     "badge": "Contact Us",
     "title": "We're Here to Help You",
     "subtitle": "Consult your product manufacturing needs with our expert team. Free, no commitment.",
     "infoTitle": "Contact Information",
-    "alamat": "Jl. Raya Industri No. 123, Jababeka Industrial Area, Bekasi, West Java 17530",
+    "alamat": "Griya Idola Industrial Park, Jl. Raya Serang No.Km.12 Blok L3 L5, Dukuh, Kec. Cikupa, Tangerang Regency, Banten 15710",
     "telepon": "+62 21 8900 1234",
-    "email": "info@bagavaalamsemesta.id",
-    "waNumber": "+62 812 3456 7890",
+    "email": "pt.bagava@gmail.com",
+    "waNumber": "+62 811-1182-3657",
     "formTitle": "Send a Message",
     "formName": "Full Name",
     "formEmail": "Email Address",
@@ -178,10 +180,10 @@
     "jamSabtu": "Saturday: 08:00 – 13:00 WIB"
   },
   "footer": {
-    "desc": "BPOM-certified beauty & health product manufacturer using high-quality natural ingredients.",
+    "desc": "Established in 2019, Bagava Alam Semesta Ltd. aims to become a leading manufacturer of personal care products. Our vision is to create high-quality, halal, and safe products, supported by excellent management and services.",
     "linkTitle": "Quick Links",
     "produkTitle": "Our Products",
     "kontakTitle": "Contact",
-    "copyright": "© 2024 Bagava Alam Semesta. All rights reserved."
+    "copyright": "© 2026 Bagava Alam Semesta. All rights reserved."
   }
 }

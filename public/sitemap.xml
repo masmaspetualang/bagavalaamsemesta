@@ -4,17 +4,17 @@
 
   <!-- Beranda / Home -->
   <url>
-    <loc>https://bagavaalamsemesta.id/id/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/" />
+    <loc>https://bagavaalamsemesta.com/id/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <lastmod>2024-06-01</lastmod>
   </url>
   <url>
-    <loc>https://bagavaalamsemesta.id/en/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/" />
+    <loc>https://bagavaalamsemesta.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <lastmod>2024-06-01</lastmod>
@@ -22,17 +22,17 @@
 
   <!-- Tentang Kami -->
   <url>
-    <loc>https://bagavaalamsemesta.id/id/tentang-kami</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/tentang-kami" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/tentang-kami" />
+    <loc>https://bagavaalamsemesta.com/id/tentang-kami</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/tentang-kami" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/tentang-kami" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-06-01</lastmod>
   </url>
   <url>
-    <loc>https://bagavaalamsemesta.id/en/tentang-kami</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/tentang-kami" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/tentang-kami" />
+    <loc>https://bagavaalamsemesta.com/en/tentang-kami</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/tentang-kami" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/tentang-kami" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-06-01</lastmod>
@@ -40,17 +40,17 @@
 
   <!-- Produk -->
   <url>
-    <loc>https://bagavaalamsemesta.id/id/produk</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/produk" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/produk" />
+    <loc>https://bagavaalamsemesta.com/id/produk</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/produk" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/produk" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <lastmod>2024-06-01</lastmod>
   </url>
   <url>
-    <loc>https://bagavaalamsemesta.id/en/produk</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/produk" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/produk" />
+    <loc>https://bagavaalamsemesta.com/en/produk</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/produk" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/produk" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <lastmod>2024-06-01</lastmod>
@@ -58,17 +58,17 @@
 
   <!-- Keunggulan -->
   <url>
-    <loc>https://bagavaalamsemesta.id/id/keunggulan</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/keunggulan" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/keunggulan" />
+    <loc>https://bagavaalamsemesta.com/id/keunggulan</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/keunggulan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/keunggulan" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2024-06-01</lastmod>
   </url>
   <url>
-    <loc>https://bagavaalamsemesta.id/en/keunggulan</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/keunggulan" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/keunggulan" />
+    <loc>https://bagavaalamsemesta.com/en/keunggulan</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/keunggulan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/keunggulan" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2024-06-01</lastmod>
@@ -76,17 +76,17 @@
 
   <!-- Kontak -->
   <url>
-    <loc>https://bagavaalamsemesta.id/id/kontak</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/kontak" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/kontak" />
+    <loc>https://bagavaalamsemesta.com/id/kontak</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/kontak" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/kontak" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2024-06-01</lastmod>
   </url>
   <url>
-    <loc>https://bagavaalamsemesta.id/en/kontak</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.id/id/kontak" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.id/en/kontak" />
+    <loc>https://bagavaalamsemesta.com/en/kontak</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bagavaalamsemesta.com/id/kontak" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bagavaalamsemesta.com/en/kontak" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2024-06-01</lastmod>

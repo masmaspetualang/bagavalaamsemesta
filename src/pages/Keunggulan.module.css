@@ -219,22 +219,36 @@
 
 /* ─── PROSES MANUFAKTUR ─── */
 .prosesSection {
-  background: var(--color-white);
+  background: var(--color-bg);
 }
 
 .prosesGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 0;
+  gap: var(--space-6);
   position: relative;
+  padding-bottom: var(--space-4);
 }
 
 @media (max-width: 1200px) {
-  .prosesGrid { grid-template-columns: repeat(3, 1fr); }
+  .prosesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
 }
 
 @media (max-width: 600px) {
-  .prosesGrid { grid-template-columns: repeat(2, 1fr); }
+  .prosesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 400px) {
+  .prosesGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
 }
 
 .prosesCard {
@@ -244,6 +258,19 @@
   text-align: center;
   padding: var(--space-6) var(--space-4);
   position: relative;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-slow);
+  overflow: visible;
+}
+
+.prosesCard:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-primary-soft) 100%);
+  border-color: var(--color-accent-light);
+  box-shadow: var(--shadow-lg);
 }
 
 .prosesStep {
@@ -260,24 +287,86 @@
   color: var(--color-white);
   margin-bottom: var(--space-4);
   position: relative;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: all var(--transition-base);
+}
+
+.prosesCard:hover .prosesStep {
+  background: var(--color-primary-dark);
+  transform: scale(1.12);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.5);
 }
 
 .prosesConnector {
+  display: block;
+  position: absolute;
+  top: 52px; /* Center of the step circle vertically */
+  left: calc(50% + 28px);
+  width: calc(100% - 56px + var(--space-6));
+  height: 2px;
+  background: repeating-linear-gradient(to right, var(--color-primary-light) 0, var(--color-primary-light) 6px, transparent 6px, transparent 12px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.65;
+  transition: all var(--transition-base);
+}
+
+.prosesCard:hover .prosesConnector {
+  opacity: 1;
+  background: repeating-linear-gradient(to right, var(--color-primary) 0, var(--color-primary) 6px, transparent 6px, transparent 12px);
+}
+
+/* Connectors visibility logic based on responsive columns */
+
+/* Desktop: 6 cols. Hide 6th. */
+.prosesCard:nth-child(6) .prosesConnector {
   display: none;
 }
 
+/* Tablet: 3 cols. Hide 3rd and 6th. */
+@media (max-width: 1200px) {
+  .prosesCard .prosesConnector {
+    display: block;
+  }
+  .prosesCard:nth-child(3n) .prosesConnector {
+    display: none;
+  }
+}
+
+/* Mobile: 2 cols. Hide 2nd, 4th, 6th. */
+@media (max-width: 600px) {
+  .prosesCard .prosesConnector {
+    display: block;
+    width: calc(100% - 56px + var(--space-4));
+  }
+  .prosesCard:nth-child(2n) .prosesConnector {
+    display: none;
+  }
+}
+
+/* Small mobile: 1 col. Hide all. */
+@media (max-width: 400px) {
+  .prosesCard .prosesConnector {
+    display: none;
+  }
+}
+
 .prosesCard h3 {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: var(--space-2);
   color: var(--color-text-dark);
+  position: relative;
+  z-index: 2;
 }
 
 .prosesCard p {
-  font-size: 0.82rem;
-  line-height: 1.55;
+  font-size: 0.85rem;
+  line-height: 1.6;
   color: var(--color-text-muted);
+  position: relative;
+  z-index: 2;
 }
 
 /* ═══════════════════════════════════════════════

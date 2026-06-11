@@ -13,7 +13,7 @@ export default function Produk() {
       <Helmet>
         <title>{t('produk.pageTitle')}</title>
         <meta name="description" content={t('produk.pageDesc')} />
-        <link rel="canonical" href={`https://bagavaalamsemesta.id/${lang}/produk`} />
+        <link rel="canonical" href={`https://bagavaalamsemesta.com/${lang}/produk`} />
         <meta property="og:title" content={t('produk.pageTitle')} />
         <meta property="og:description" content={t('produk.pageDesc')} />
         <meta property="og:type" content="website" />
@@ -66,7 +66,7 @@ export default function Produk() {
                   <div className={styles.produkFooter}>
                     <span className={styles.volumeTag}>{product.volume}</span>
                     <a
-                      href={`https://wa.me/6281234567890?text=Halo, saya ingin bertanya tentang produk ${product.name}`}
+                      href={`https://wa.me/6281111823657?text=Halo, saya ingin bertanya tentang produk ${product.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.inquiryBtn}

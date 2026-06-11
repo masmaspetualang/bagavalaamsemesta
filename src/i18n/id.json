@@ -8,8 +8,8 @@
   },
   "hero": {
     "badge": "Berstandar BPOM",
-    "title": "Manufaktur Produk Kecantikan & Kesehatan",
-    "subtitle": "Bagava Alam Semesta melayani jasa manufaktur produk kecantikan & kesehatan berbahan natural, dari formulasi hingga legalitas BPOM.",
+    "title": "Manufaktur Produk Kesehatan & Kosmetik",
+    "subtitle": "Bagava Alam Semesta melayani jasa manufaktur produk kesehatan & kosmetik berbahan natural, dari formulasi hingga legalitas BPOM.",
     "btnProduk": "Lihat Produk",
     "btnKontak": "Hubungi Kami"
   },
@@ -17,7 +17,7 @@
     "items": [
       "Bersertifikat BPOM",
       "Bahan Natural Berkualitas",
-      "Pengalaman Sejak 2020",
+      "Pengalaman Sejak 2019",
       "Formulasi hingga Legalitas",
       "Dipercaya 150K+ Pelanggan"
     ]
@@ -61,20 +61,22 @@
   },
   "about": {
     "pageTitle": "Tentang Kami | Bagava Alam Semesta",
-    "pageDesc": "Kenali lebih dalam tentang Bagava Alam Semesta, manufaktur produk kecantikan dan kesehatan berstandar BPOM dengan bahan-bahan natural berkualitas.",
-    "heroBadge": "Sejak 2020",
+    "pageDesc": "Kenali lebih dalam tentang Bagava Alam Semesta, manufaktur produk kesehatan dan kosmetik berstandar BPOM dengan bahan-bahan natural berkualitas.",
+    "heroBadge": "Sejak 2019",
     "heroTitle": "Menghadirkan Produk Natural Berkualitas untuk Kehidupan Lebih Baik",
-    "heroSubtitle": "Kami berkomitmen untuk menjadi mitra manufaktur terpercaya dalam industri kecantikan dan kesehatan Indonesia.",
+    "heroSubtitle": "Kami berkomitmen untuk menjadi mitra manufaktur terpercaya dalam industri kesehatan dan kosmetik Indonesia.",
     "historyBadge": "Sejarah Kami",
     "historyTitle": "Perjalanan Bagava Alam Semesta",
-    "historyDesc": "Bagava Alam Semesta didirikan pada tahun 2020 dengan visi menghadirkan produk kecantikan dan kesehatan berbahan natural berkualitas tinggi yang terjangkau. Berawal dari laboratorium kecil dengan semangat besar, kini kami telah berkembang menjadi salah satu manufaktur terpercaya di Indonesia dengan lebih dari 150.000 pelanggan setia.",
+    "historyDesc": "Bagava Alam Semesta didirikan pada tahun 2019 dengan visi menghadirkan produk kesehatan dan kosmetik berbahan natural berkualitas tinggi yang terjangkau. Berawal dari laboratorium kecil dengan semangat besar, kini kami telah berkembang menjadi salah satu manufaktur terpercaya di Indonesia dengan lebih dari 150.000 pelanggan setia.",
     "historyDesc2": "Dengan dukungan teknologi modern dan tim ahli yang berpengalaman, kami memastikan setiap produk melewati standar kualitas ketat sebelum sampai ke tangan konsumen. Setiap tetes produk kami mengandung komitmen untuk memberikan yang terbaik.",
+    "visiBadge": "Visi Kami",
+    "visiText": "Menjadi perusahaan yang terdepan dan mampu menjangkau pasar Internasional dengan memberikan produk yang berkualitas, aman, halal serta pelayanan yang terbaik.",
     "misiTitle": "Visi & Misi Kami",
     "misiSubtitle": "Lima pilar utama yang menjadi landasan setiap langkah kami dalam melayani pelanggan",
     "misiItems": [
       {
         "title": "Menciptakan Produk Berkualitas",
-        "desc": "Menghadirkan produk kecantikan dan kesehatan dengan formulasi terbaik menggunakan bahan natural pilihan."
+        "desc": "Menghadirkan produk kesehatan dan kosmetik dengan formulasi terbaik menggunakan bahan natural pilihan."
       },
       {
         "title": "Distribusi Merata ke Seluruh Indonesia",
@@ -90,7 +92,7 @@
       },
       {
         "title": "Meningkatkan Kesadaran Kesehatan",
-        "desc": "Berkontribusi dalam meningkatkan kesadaran masyarakat tentang pentingnya produk kesehatan dan kecantikan berbahan natural."
+        "desc": "Berkontribusi dalam meningkatkan kesadaran masyarakat tentang pentingnya produk kesehatan dan kosmetik berbahan natural."
       }
     ],
     "nilaiTitle": "Nilai-Nilai Perusahaan",
@@ -103,14 +105,14 @@
   },
   "produk": {
     "pageTitle": "Produk | Bagava Alam Semesta",
-    "pageDesc": "Temukan rangkaian produk kecantikan dan kesehatan berstandar BPOM dari Bagava Alam Semesta, dibuat dari bahan-bahan natural pilihan.",
+    "pageDesc": "Temukan rangkaian produk kesehatan dan kosmetik berstandar BPOM dari Bagava Alam Semesta, dibuat dari bahan-bahan natural pilihan.",
     "badge": "Produk Kami",
     "title": "Rangkaian Produk Berkualitas",
     "subtitle": "Setiap produk dirancang dengan formulasi terbaik menggunakan bahan natural yang telah tersertifikasi BPOM"
   },
   "keunggulan": {
     "pageTitle": "Keunggulan | Bagava Alam Semesta",
-    "pageDesc": "Ketahui keunggulan Bagava Alam Semesta sebagai manufaktur produk kecantikan dan kesehatan berstandar BPOM terpercaya di Indonesia.",
+    "pageDesc": "Ketahui keunggulan Bagava Alam Semesta sebagai manufaktur produk kesehatan dan kosmetik berstandar BPOM terpercaya di Indonesia.",
     "heroBadge": "Mengapa Memilih Kami",
     "heroTitle": "Keunggulan yang Membuat Kami Berbeda",
     "heroSubtitle": "Kami tidak hanya membuat produk, kami membangun kepercayaan melalui standar kualitas tertinggi.",
@@ -156,15 +158,15 @@
   },
   "kontak": {
     "pageTitle": "Kontak | Bagava Alam Semesta",
-    "pageDesc": "Hubungi Bagava Alam Semesta untuk konsultasi manufaktur produk kecantikan dan kesehatan. Kami siap membantu mewujudkan produk impian Anda.",
+    "pageDesc": "Hubungi Bagava Alam Semesta untuk konsultasi manufaktur produk kesehatan dan kosmetik. Kami siap membantu mewujudkan produk impian Anda.",
     "badge": "Hubungi Kami",
     "title": "Kami Siap Membantu Anda",
     "subtitle": "Konsultasikan kebutuhan manufaktur produk Anda bersama tim ahli kami. Gratis, tanpa komitmen.",
     "infoTitle": "Informasi Kontak",
-    "alamat": "Jl. Raya Industri No. 123, Kawasan Industri Jababeka, Bekasi, Jawa Barat 17530",
+    "alamat": "Griya Idola Industrial Park, Jl. Raya Serang No.Km.12 Blok L3 L5, Dukuh, Kec. Cikupa, Kabupaten Tangerang, Banten 15710",
     "telepon": "+62 21 8900 1234",
-    "email": "info@bagavaalamsemesta.id",
-    "waNumber": "+62 812 3456 7890",
+    "email": "pt.bagava@gmail.com",
+    "waNumber": "+62 811-1182-3657",
     "formTitle": "Kirim Pesan",
     "formName": "Nama Lengkap",
     "formEmail": "Alamat Email",
@@ -178,10 +180,10 @@
     "jamSabtu": "Sabtu: 08.00 – 13.00 WIB"
   },
   "footer": {
-    "desc": "Manufaktur produk kecantikan & kesehatan berstandar BPOM dengan bahan-bahan natural berkualitas tinggi.",
+    "desc": "Didirikan pada tahun 2019, Bagava Alam Semesta Ltd. bertujuan menjadi produsen terkemuka dalam produk perawatan pribadi. Visi kami adalah menciptakan produk yang berkualitas tinggi, halal, dan aman, didukung oleh manajemen serta layanan yang prima.",
     "linkTitle": "Tautan Cepat",
     "produkTitle": "Produk Kami",
     "kontakTitle": "Kontak",
-    "copyright": "© 2024 Bagava Alam Semesta. Hak cipta dilindungi."
+    "copyright": "© 2026 Bagava Alam Semesta. Hak cipta dilindungi."
   }
 }

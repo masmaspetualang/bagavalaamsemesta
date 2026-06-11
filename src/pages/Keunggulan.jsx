@@ -22,7 +22,7 @@ export default function Keunggulan() {
       <Helmet>
         <title>{t('keunggulan.pageTitle')}</title>
         <meta name="description" content={t('keunggulan.pageDesc')} />
-        <link rel="canonical" href={`https://bagavaalamsemesta.id/${lang}/keunggulan`} />
+        <link rel="canonical" href={`https://bagavaalamsemesta.com/${lang}/keunggulan`} />
         <meta property="og:title" content={t('keunggulan.pageTitle')} />
         <meta property="og:description" content={t('keunggulan.pageDesc')} />
         <meta property="og:type" content="website" />

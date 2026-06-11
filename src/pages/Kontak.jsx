@@ -36,12 +36,6 @@ export default function Kontak() {
       link: null,
     },
     {
-      Icon: FiPhone,
-      label: lang === 'id' ? 'Telepon' : 'Phone',
-      value: t('kontak.telepon'),
-      link: `tel:${t('kontak.telepon')}`,
-    },
-    {
       Icon: FiMail,
       label: 'Email',
       value: t('kontak.email'),
@@ -51,7 +45,7 @@ export default function Kontak() {
       Icon: FaWhatsapp,
       label: 'WhatsApp',
       value: t('kontak.waNumber'),
-      link: 'https://wa.me/6281234567890',
+      link: 'https://wa.me/6281111823657',
     },
     {
       Icon: FiClock,
@@ -66,7 +60,7 @@ export default function Kontak() {
       <Helmet>
         <title>{t('kontak.pageTitle')}</title>
         <meta name="description" content={t('kontak.pageDesc')} />
-        <link rel="canonical" href={`https://bagavaalamsemesta.id/${lang}/kontak`} />
+        <link rel="canonical" href={`https://bagavaalamsemesta.com/${lang}/kontak`} />
         <meta property="og:title" content={t('kontak.pageTitle')} />
         <meta property="og:description" content={t('kontak.pageDesc')} />
         <meta property="og:type" content="website" />
@@ -75,7 +69,7 @@ export default function Kontak() {
           "@type": "ContactPage",
           "name": "Kontak Bagava Alam Semesta",
           "description": t('kontak.pageDesc'),
-          "url": `https://bagavaalamsemesta.id/${lang}/kontak`,
+          "url": `https://bagavaalamsemesta.com/${lang}/kontak`,
           "mainEntity": {
             "@type": "Organization",
             "name": "Bagava Alam Semesta",
@@ -83,9 +77,9 @@ export default function Kontak() {
             "email": t('kontak.email'),
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Jl. Raya Industri No. 123",
-              "addressLocality": "Bekasi",
-              "addressRegion": "Jawa Barat",
+              "streetAddress": "Griya Idola Industrial Park, Jl. Raya Serang No.Km.12 Blok L3 L5, Dukuh, Kec. Cikupa",
+              "addressLocality": "Kabupaten Tangerang",
+              "addressRegion": "Banten",
               "addressCountry": "ID"
             }
           }
@@ -133,7 +127,7 @@ export default function Kontak() {
               </ul>
 
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6281111823657"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`btn btn-primary ${styles.waBtn}`}
@@ -244,7 +238,7 @@ export default function Kontak() {
       {/* ─── MAP EMBED ─── */}
       <section className={styles.mapSection} aria-label="Location map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.285720703125!2d107.1360229!3d-6.2890449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTcnMjAuNiJTIDEwN8KwMDgnMDkuNyJF!5e0!3m2!1sid!2sid!4v1620000000000"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.224168274174!2d106.5317460747835!3d-6.2341537610495505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fe07a9a2b251%3A0x94608a0eaf950b68!2sGriya%20Idola%20Industrial%20Park!5e0!3m2!1sid!2sid!4v1781196220159!5m2!1sid!2sid" 
           width="100%"
           height="400"
           style={{ border: 0 }}
