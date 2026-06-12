@@ -6,7 +6,7 @@ import {
   FiInstagram,
 } from 'react-icons/fi';
 import { FaWhatsapp, FaTiktok } from 'react-icons/fa';
-import logo from '../assets/logo.png';
+import logo from '../assets/optimized/logo.webp';
 import styles from './Footer.module.css';
 
 export default function Footer() {

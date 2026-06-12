@@ -179,3 +179,127 @@
   .produkFooter { flex-direction: column; align-items: flex-start; }
   .inquiryBtn { width: 100%; text-align: center; }
 }
+
+/* ═══════════════════════════════════════════════
+   GALLERY SECTION
+   ═══════════════════════════════════════════════ */
+
+.gallerySection {
+  padding: var(--space-20, 5rem) 0 var(--space-20, 5rem);
+  background: var(--color-bg-subtle, #f8fafc);
+}
+
+/* ─── Header ─── */
+.galleryHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.galleryBadge {
+  display: inline-flex;
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+.galleryHeader h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: var(--space-3, 0.75rem) 0 var(--space-2, 0.5rem);
+  line-height: 1.2;
+}
+
+.galleryHeader p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+/* ─── Grid ─── */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 220px);
+  gap: 10px;
+}
+
+/* ─── Item base ─── */
+.galleryItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #e2e8f0;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.06);
+}
+
+/* ─── Span variants ─── */
+/* tall = takes 2 rows */
+.span-tall {
+  grid-row: span 2;
+}
+
+/* wide = takes 2 columns */
+.span-wide {
+  grid-column: span 2;
+}
+
+/* normal = 1×1 */
+.span-normal {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  /* On medium screens remove wide spans for cleaner layout */
+  .span-wide {
+    grid-column: span 2;
+  }
+  .span-tall {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallerySection {
+    padding: 3rem 0;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 160px);
+    gap: 6px;
+  }
+
+  /* Reset all spans on mobile — simple 2-col equal grid */
+  .span-tall,
+  .span-wide,
+  .span-normal {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  /* Make the first image hero-sized on mobile */
+  .galleryGrid > :first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}

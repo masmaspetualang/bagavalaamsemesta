@@ -4,6 +4,25 @@ import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection'
 import { PRODUCTS } from '../constants/products';
 import styles from './Produk.module.css';
 
+// ─── Optimized WebP gallery images (pre-converted, ~80-110 KB each) ───
+import mesin1 from '../assets/mesin/optimized/mesin1.webp';
+import mesin2 from '../assets/mesin/optimized/mesin2.webp';
+import mesin3 from '../assets/mesin/optimized/mesin3.webp';
+import mesin4 from '../assets/mesin/optimized/mesin4.webp';
+import mesin5 from '../assets/mesin/optimized/mesin5.webp';
+import mesin6 from '../assets/mesin/optimized/mesin6.webp';
+import mesin7 from '../assets/mesin/optimized/mesin7.webp';
+
+const GALLERY_ITEMS = [
+  { src: mesin1, alt: 'Mesin produksi Bagava 1', span: 'tall' },
+  { src: mesin2, alt: 'Mesin produksi Bagava 2', span: 'wide' },
+  { src: mesin3, alt: 'Mesin produksi Bagava 3', span: 'normal' },
+  { src: mesin4, alt: 'Mesin produksi Bagava 4', span: 'tall' },
+  { src: mesin5, alt: 'Mesin produksi Bagava 5', span: 'wide' },
+  { src: mesin6, alt: 'Mesin produksi Bagava 6', span: 'normal' },
+  { src: mesin7, alt: 'Mesin produksi Bagava 7', span: 'wide' },
+];
+
 export default function Produk() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
@@ -79,6 +98,45 @@ export default function Produk() {
               </AnimatedItem>
             ))}
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ─── GALLERY SECTION ─── */}
+      <section className={styles.gallerySection} aria-label="Galeri mesin produksi">
+        <div className="container">
+          <AnimatedSection variant="fadeInUp" className={styles.galleryHeader}>
+            <span className={`badge ${styles.galleryBadge}`}>
+              {lang === 'id' ? 'Fasilitas' : 'Facility'}
+            </span>
+            <h2>
+              {lang === 'id' ? 'Galeri Mesin Produksi' : 'Production Machine Gallery'}
+            </h2>
+            <p>
+              {lang === 'id'
+                ? 'Mesin-mesin canggih kami yang mendukung kualitas produk terbaik.'
+                : 'Our advanced machines that support the highest product quality.'}
+            </p>
+          </AnimatedSection>
+
+          <div className={styles.galleryGrid} role="list">
+            {GALLERY_ITEMS.map((item, i) => (
+              <div
+                key={i}
+                className={`${styles.galleryItem} ${styles[`span-${item.span}`]}`}
+                role="listitem"
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  loading={i < 3 ? 'eager' : 'lazy'}
+                  decoding={i < 3 ? 'sync' : 'async'}
+                  fetchpriority={i === 0 ? 'high' : 'auto'}
+                  width={640}
+                  height={480}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

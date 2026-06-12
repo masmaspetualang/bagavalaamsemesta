@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FiChevronDown } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
-import logo from '../assets/logo.png';
+import logo from '../assets/optimized/logo.webp';
 import styles from './Navbar.module.css';
 
 // Flag component menggunakan flagcdn.com

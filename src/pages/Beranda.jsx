@@ -16,8 +16,10 @@ import {
 import { FaWhatsapp } from 'react-icons/fa';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
 import { FEATURED_PRODUCTS, CLIENTS } from '../constants/products';
-import historyImg from '../assets/Foto/bagava.jpeg';
-import factoryImg from '../assets/konten/we_are_factory.jpg';
+// ─── Optimized WebP ───
+import historyImg    from '../assets/Foto/optimized/bagava.webp';
+import factoryImg   from '../assets/konten/optimized/we_are_factory.webp';
+// ─── Video: shorter packaging clip (11 MB) ───
 import facilityVideo from '../assets/vidio/J7.mp4';
 import styles from './Beranda.module.css';
 
@@ -157,7 +159,8 @@ export default function Beranda() {
               <img
                 src={factoryImg}
                 alt="Bagava Alam Semesta Factory"
-                loading="lazy"
+                loading="eager"
+                decoding="async"
                 width={540}
                 height={400}
               />
@@ -252,10 +255,13 @@ export default function Beranda() {
 
             <AnimatedSection variant="slideRight" className={styles.videoWrapper}>
               <div className={styles.videoCard}>
+                {/* preload="none" — video TIDAK loading saat halaman dibuka */}
+                {/* Browser hanya download saat user tekan play */}
                 <video
                   className={styles.videoPlayer}
                   src={facilityVideo}
-                  autoPlay
+                  poster={factoryImg}
+                  preload="none"
                   loop
                   muted
                   playsInline

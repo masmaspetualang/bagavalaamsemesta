@@ -3,9 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { FiCheck } from 'react-icons/fi';
 import { MdVerified } from 'react-icons/md';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
-import qualityImg from '../assets/Foto/IMG_8995.JPG';
-import factoryImg from '../assets/konten/we_are_factory.jpg';
-import techImg from '../assets/konten/high_tech_support.jpg';
+// ─── Optimized WebP ───
+import qualityImg from '../assets/Foto/optimized/img_8995.webp';
+import factoryImg from '../assets/konten/optimized/we_are_factory.webp';
+import techImg    from '../assets/konten/optimized/high_tech_support.webp';
 import styles from './Keunggulan.module.css';
 
 const KEUNGGULAN_IMAGES = [qualityImg, factoryImg, techImg];

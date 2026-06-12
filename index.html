@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#2563EB" />
     <meta name="description" content="Bagava Alam Semesta — Manufaktur produk kesehatan & kosmetik berstandar BPOM dengan bahan natural berkualitas." />
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Bagava Alam Semesta" />
     <meta property="og:locale" content="id_ID" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
-    <!-- Preconnect for Google Fonts -->
+
+    <!-- ─── Performance: DNS prefetch + Preconnect ─── -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <title>Bagava Alam Semesta — Manufaktur Produk Kesehatan & Kosmetik</title>
+
+    <!-- ─── Google Fonts: non-blocking via media trick ─── -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!-- Fallback for no-JS -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      />
+    </noscript>
+
+    <title>Bagava Alam Semesta — Manufaktur Produk Kesehatan &amp; Kosmetik</title>
   </head>
   <body>
     <div id="root"></div>

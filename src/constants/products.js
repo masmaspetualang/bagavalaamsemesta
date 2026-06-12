@@ -1,5 +1,6 @@
 // Product data constants
-import sabun from '../assets/NEWWIDYATEMULAWAK/5DD6CA54-3DDB-4860-8673-02219D079341-600-00000062F8C19857.jpeg';
+// ─── Optimized WebP images ───
+import sabun from '../assets/NEWWIDYATEMULAWAK/optimized/5dd6ca54-3ddb-4860-8673-02219d079341-600-00000062f8c19857.webp';
 
 
 export const PRODUCTS = [

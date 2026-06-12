@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { FiMapPin, FiPhone, FiMail, FiClock, FiSend, FiCheck } from 'react-icons/fi';
+import { FiMapPin, FiMail, FiClock, FiSend, FiCheck } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import AnimatedSection from '../components/ui/AnimatedSection';
 import styles from './Kontak.module.css';
@@ -21,7 +21,6 @@ export default function Kontak() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API call
     setTimeout(() => {
       setSubmitted(true);
       setLoading(false);
@@ -55,6 +54,9 @@ export default function Kontak() {
     },
   ];
 
+  const MAP_URL =
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.224168274174!2d106.5317460747835!3d-6.2341537610495505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fe07a9a2b251%3A0x94608a0eaf950b68!2sGriya%20Idola%20Industrial%20Park!5e0!3m2!1sid!2sid!4v1781196220159!5m2!1sid!2sid';
+
   return (
     <>
       <Helmet>
@@ -65,24 +67,25 @@ export default function Kontak() {
         <meta property="og:description" content={t('kontak.pageDesc')} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "name": "Kontak Bagava Alam Semesta",
-          "description": t('kontak.pageDesc'),
-          "url": `https://bagavaalamsemesta.com/${lang}/kontak`,
-          "mainEntity": {
-            "@type": "Organization",
-            "name": "Bagava Alam Semesta",
-            "telephone": t('kontak.telepon'),
-            "email": t('kontak.email'),
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Griya Idola Industrial Park, Jl. Raya Serang No.Km.12 Blok L3 L5, Dukuh, Kec. Cikupa",
-              "addressLocality": "Kabupaten Tangerang",
-              "addressRegion": "Banten",
-              "addressCountry": "ID"
-            }
-          }
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          name: 'Kontak Bagava Alam Semesta',
+          description: t('kontak.pageDesc'),
+          url: `https://bagavaalamsemesta.com/${lang}/kontak`,
+          mainEntity: {
+            '@type': 'Organization',
+            name: 'Bagava Alam Semesta',
+            telephone: t('kontak.telepon'),
+            email: t('kontak.email'),
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress:
+                'Griya Idola Industrial Park, Jl. Raya Serang No.Km.12 Blok L3 L5, Dukuh, Kec. Cikupa',
+              addressLocality: 'Kabupaten Tangerang',
+              addressRegion: 'Banten',
+              addressCountry: 'ID',
+            },
+          },
         })}</script>
       </Helmet>
 
@@ -115,7 +118,11 @@ export default function Kontak() {
                     <div>
                       <strong>{item.label}</strong>
                       {item.link ? (
-                        <a href={item.link} target={item.link.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
+                        <a
+                          href={item.link}
+                          target={item.link.startsWith('http') ? '_blank' : undefined}
+                          rel="noopener noreferrer"
+                        >
                           {item.value}
                         </a>
                       ) : (
@@ -226,7 +233,9 @@ export default function Kontak() {
                     ) : (
                       <FiSend size={16} />
                     )}
-                    {loading ? (lang === 'id' ? 'Mengirim...' : 'Sending...') : t('kontak.formBtn')}
+                    {loading
+                      ? lang === 'id' ? 'Mengirim...' : 'Sending...'
+                      : t('kontak.formBtn')}
                   </button>
                 </form>
               )}
@@ -235,13 +244,15 @@ export default function Kontak() {
         </div>
       </section>
 
-      {/* ─── MAP EMBED ─── */}
+      {/* ─── MAP ─── */}
+      {/* loading="lazy" = browser hanya load peta saat user scroll mendekati area ini */}
+      {/* Tidak perlu klik, tidak blocking halaman saat pertama dibuka */}
       <section className={styles.mapSection} aria-label="Location map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.224168274174!2d106.5317460747835!3d-6.2341537610495505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fe07a9a2b251%3A0x94608a0eaf950b68!2sGriya%20Idola%20Industrial%20Park!5e0!3m2!1sid!2sid!4v1781196220159!5m2!1sid!2sid" 
+          src={MAP_URL}
           width="100%"
           height="400"
-          style={{ border: 0 }}
+          style={{ border: 0, display: 'block' }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

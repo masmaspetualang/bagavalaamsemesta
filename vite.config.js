@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
+    // Don't inline images as base64 — serve as separate files for better caching
+    assetsInlineLimit: 0,
     rollupOptions: {
       output: {
         // Split vendor chunks for better caching
@@ -24,6 +26,10 @@ export default defineConfig({
             }
           }
         },
+        // Content-hash naming for long-term caching
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
       },
     },
   },
