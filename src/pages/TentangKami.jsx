@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { FiCheckCircle, FiShield, FiZap, FiAward, FiDroplet } from 'react-icons/fi';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
-import historyImg from '../assets/Foto/IMG_8997.JPG';
+import historyImg from '../assets/Foto/bagava.jpeg';
 import createQuality from '../assets/konten/create_quality_product.jpg';
 import distributeAll from '../assets/konten/distribute_to_all.jpg';
 import developNewest from '../assets/Foto/IMG_8990.JPG';
