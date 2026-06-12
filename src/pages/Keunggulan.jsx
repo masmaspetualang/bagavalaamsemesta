@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { FiCheck } from 'react-icons/fi';
 import { MdVerified } from 'react-icons/md';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
-import qualityImg from '../assets/konten/quality_products.jpg';
+import qualityImg from '../assets/Foto/IMG_8995.JPG';
 import factoryImg from '../assets/konten/we_are_factory.jpg';
 import techImg from '../assets/konten/high_tech_support.jpg';
 import styles from './Keunggulan.module.css';

@@ -5,9 +5,9 @@ import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection'
 import historyImg from '../assets/Foto/IMG_8997.JPG';
 import createQuality from '../assets/konten/create_quality_product.jpg';
 import distributeAll from '../assets/konten/distribute_to_all.jpg';
-import developNewest from '../assets/konten/develop_newest_product.jpg';
-import effectiveMgmt from '../assets/konten/effective_management.jpg';
-import developHealth from '../assets/konten/develop_people_health_awareness.jpg';
+import developNewest from '../assets/Foto/IMG_8990.JPG';
+import effectiveMgmt from '../assets/Foto/IMG_8995.JPG';
+import developHealth from '../assets/Foto/IMG_8987.JPG';
 import styles from './TentangKami.module.css';
 
 const MISI_IMAGES = [createQuality, distributeAll, developNewest, effectiveMgmt, developHealth];
